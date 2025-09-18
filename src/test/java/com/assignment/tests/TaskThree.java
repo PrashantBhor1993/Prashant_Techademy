@@ -69,8 +69,8 @@ public class TaskThree {
         Thread.sleep(1000);
 
         driver.findElement(By.xpath("//a[text()='Search']")).click();
-       // wait.until(ExpectedConditions.urlContains("flights"));
-       // System.out.println("Search page displayed successfully!");
+        wait.until(ExpectedConditions.urlContains("flights"));
+       System.out.println("Search page displayed successfully!");
     }
 
     @AfterClass
